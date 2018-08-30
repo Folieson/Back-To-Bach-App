@@ -12,6 +12,7 @@ import AVFoundation
 class ViewController: UIViewController {
 
     var player = AVAudioPlayer()
+    let audioPath = Bundle.main.path(forResource: "bach-bwv140-bisotti", ofType: "mp3")
     var timer = Timer()
     
     @IBOutlet var volumeSlider: UISlider!
@@ -19,7 +20,7 @@ class ViewController: UIViewController {
     
     @IBAction func play(_ sender: UIBarButtonItem) {
         player.prepareToPlay()
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
         player.play()
     }
     @IBAction func pause(_ sender: UIBarButtonItem) {
@@ -43,8 +44,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let audioPath = Bundle.main.path(forResource: "bach-bwv140-bisotti", ofType: "mp3")
-        
         do {
             try player = AVAudioPlayer(contentsOf: URL(fileURLWithPath: audioPath!))
             
@@ -55,7 +54,7 @@ class ViewController: UIViewController {
         positionSlider.value = 0.0
     }
     
-    @objc func updateTime () {
+    @objc func updateTimer () {
         positionSlider.value = Float(player.currentTime)
     }
 

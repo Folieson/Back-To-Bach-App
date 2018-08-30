@@ -21,7 +21,7 @@
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="okU-rA-QGM">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="VLt-KF-V7v">
+                                    <navigationItem title="Back To Bach App" id="VLt-KF-V7v">
                                         <barButtonItem key="rightBarButtonItem" systemItem="play" id="PLs-MA-iWC">
                                             <connections>
                                                 <action selector="play:" destination="BYZ-38-t0r" id="HaB-Qt-HhQ"/>
