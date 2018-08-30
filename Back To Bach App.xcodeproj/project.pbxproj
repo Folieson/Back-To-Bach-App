@@ -12,6 +12,8 @@
 		B9DDC876213832E5007A56F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9DDC874213832E5007A56F7 /* Main.storyboard */; };
 		B9DDC878213832E6007A56F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9DDC877213832E6007A56F7 /* Assets.xcassets */; };
 		B9DDC87B213832E6007A56F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9DDC879213832E6007A56F7 /* LaunchScreen.storyboard */; };
+		B9DDC883213833FE007A56F7 /* Johann_Sebastian_Bach.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B9DDC882213833FE007A56F7 /* Johann_Sebastian_Bach.jpg */; };
+		B9DDC8852138348C007A56F7 /* bach-bwv140-bisotti.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B9DDC8842138348C007A56F7 /* bach-bwv140-bisotti.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		B9DDC877213832E6007A56F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B9DDC87A213832E6007A56F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B9DDC87C213832E6007A56F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9DDC882213833FE007A56F7 /* Johann_Sebastian_Bach.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Johann_Sebastian_Bach.jpg; sourceTree = "<group>"; };
+		B9DDC8842138348C007A56F7 /* bach-bwv140-bisotti.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bach-bwv140-bisotti.mp3"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				B9DDC870213832E5007A56F7 /* AppDelegate.swift */,
 				B9DDC872213832E5007A56F7 /* ViewController.swift */,
 				B9DDC874213832E5007A56F7 /* Main.storyboard */,
+				B9DDC882213833FE007A56F7 /* Johann_Sebastian_Bach.jpg */,
+				B9DDC8842138348C007A56F7 /* bach-bwv140-bisotti.mp3 */,
 				B9DDC877213832E6007A56F7 /* Assets.xcassets */,
 				B9DDC879213832E6007A56F7 /* LaunchScreen.storyboard */,
 				B9DDC87C213832E6007A56F7 /* Info.plist */,
@@ -122,6 +128,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9DDC8852138348C007A56F7 /* bach-bwv140-bisotti.mp3 in Resources */,
+				B9DDC883213833FE007A56F7 /* Johann_Sebastian_Bach.jpg in Resources */,
 				B9DDC87B213832E6007A56F7 /* LaunchScreen.storyboard in Resources */,
 				B9DDC878213832E6007A56F7 /* Assets.xcassets in Resources */,
 				B9DDC876213832E5007A56F7 /* Main.storyboard in Resources */,
