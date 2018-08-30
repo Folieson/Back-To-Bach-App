@@ -22,23 +22,41 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="VLt-KF-V7v">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="PLs-MA-iWC"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="PLs-MA-iWC">
+                                            <connections>
+                                                <action selector="play:" destination="BYZ-38-t0r" id="HaB-Qt-HhQ"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEo-ia-cbz">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <items>
-                                    <barButtonItem systemItem="pause" id="uso-8F-Hs2"/>
+                                    <barButtonItem systemItem="pause" id="uso-8F-Hs2">
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" id="sLH-xU-eU6"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="4rR-jk-tRd"/>
-                                    <barButtonItem title="Stop" id="Z9D-GQ-7mn"/>
+                                    <barButtonItem title="Stop" id="Z9D-GQ-7mn">
+                                        <connections>
+                                            <action selector="stop:" destination="BYZ-38-t0r" id="sMH-j3-wkX"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="6Kw-9L-1sD">
                                 <rect key="frame" x="14" y="340" width="347" height="31"/>
+                                <connections>
+                                    <action selector="volumeSliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="wwQ-qh-bGl"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="aI3-eR-F8V">
                                 <rect key="frame" x="14" y="410" width="347" height="31"/>
+                                <connections>
+                                    <action selector="positionSliderMoved:" destination="BYZ-38-t0r" eventType="valueChanged" id="TtL-p5-SD1"/>
+                                </connections>
                             </slider>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Johann_Sebastian_Bach.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="IYS-3F-ms3">
                                 <rect key="frame" x="97.5" y="80" width="180" height="220"/>
@@ -67,6 +85,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="positionSlider" destination="aI3-eR-F8V" id="VDs-ax-6fm"/>
+                        <outlet property="volumeSlider" destination="6Kw-9L-1sD" id="t1i-Wp-2v7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
